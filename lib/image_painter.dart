@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
-import 'package:cached_image_painter/image_loader.dart';
-import 'package:cached_image_painter/precached_image_painter.dart';
+import 'package:instant_image_painter/image_loader.dart';
+import 'package:instant_image_painter/precached_image_painter.dart';
 import 'package:flutter/material.dart';
 
 class ImagePainter extends StatefulWidget {
@@ -49,7 +49,7 @@ class _ImagePainterState extends State<ImagePainter> {
 
     // Otherwise, generate image from bytes. Operation can only be async, as
     // the dart api can only be executed in async mode.
-    ImageLoader.load(widget.imageBytes!, onDone: (ui.Image img) {
+    ImageLoader.load(widget.imageBytes, onDone: (ui.Image img) {
       if (mounted) {
         setState(() {
           _image = img;
@@ -60,6 +60,6 @@ class _ImagePainterState extends State<ImagePainter> {
       }
     });
 
-    return widget.placeholder!;
+    return widget.placeholder;
   }
 }

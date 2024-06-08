@@ -1,6 +1,6 @@
 import 'dart:ui' as ui;
 
-import 'package:cached_image_painter/ui_image_painter.dart';
+import 'package:instant_image_painter/ui_image_painter.dart';
 import 'package:flutter/material.dart';
 
 /// A widget that paints a precached image. The image is painted immediately

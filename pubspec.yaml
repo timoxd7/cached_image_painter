@@ -1,10 +1,12 @@
-name: cached_image_painter
-description: "Simple Image Painter for precached Images"
+name: instant_image_painter
+description: "Simple Image Painter for precached Images, showing instantly after build without pop in"
 version: 0.0.1
-homepage:
+homepage: https://github.com/timoxd7/instant_image_painter
+repository: https://github.com/timoxd7/instant_image_painter
+issue_tracker: https://github.com/timoxd7/instant_image_painter/issues
 
 environment:
-  sdk: '>=3.4.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

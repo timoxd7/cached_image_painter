@@ -1,10 +1,10 @@
-# Image Painter Widget
+# Instantly draw Images!
 
 This is a simple Widget to cache Images before using any build method and instantly draw in new image widgets. Removes popping in of images.
 
 ## Why use this?
 
-If using the Image widget from flutter, the image might pop in after some time, even if it was loaded directly from memory using Uint8List.
+If using the Image widget from flutter, the image might pop in after some time, even if it was loaded directly from memory using `Uint8List`.
 
 This simple Widget works around this by using a canvas and draws the image directly on there. It also provides you with some helper to easily load the image before any build method was called.
 
